@@ -7,7 +7,8 @@ body {
                          'nav nav nav nav'
                          'section section aside aside'
                          'footer footer footer footer';
-    grid-template-rows: 100px 50px 700px 100px;
+    grid-template-rows: 100px 70px 500px 100px;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
 }
 header {
     grid-area: header;
@@ -23,10 +24,28 @@ header img {
 nav {
     grid-area: nav;
     background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav a {
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 22pt;
+    text-decoration: none;
 }
 section {
     grid-area: section;
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section img {
+    width: 400px;
+    height: auto;
 }
 aside {
     grid-area: aside;
